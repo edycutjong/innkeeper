@@ -1,0 +1,13 @@
+{
+  "n_matched": 11,
+  "n_mismatches": 10,
+  "n_txns": 32,
+  "night": "2026-07-19",
+  "tier_stats": {
+    "amount_date": 1,
+    "cash_noop": 5,
+    "fuzzy": 0,
+    "ota": 3,
+    "ref_exact": 10
+  }
+}

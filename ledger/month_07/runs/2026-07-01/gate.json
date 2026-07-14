@@ -1,0 +1,82 @@
+{
+  "decisions": [
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1002",
+      "classification": "fx",
+      "confidence": 0.97,
+      "eloss_cents": 1,
+      "materiality_usd": 0.29,
+      "mismatch_id": "m-01",
+      "reason": "confidence 0.97 \u2265 0.85 \u2227 materiality $0.29 \u2264 $50.00",
+      "subtype": "fx_rounding"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1001",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 23,
+      "materiality_usd": 3.87,
+      "mismatch_id": "m-02",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $3.87 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1004",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 25,
+      "materiality_usd": 4.17,
+      "mismatch_id": "m-03",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $4.17 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1008",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 32,
+      "materiality_usd": 5.37,
+      "mismatch_id": "m-04",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $5.37 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1010",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 43,
+      "materiality_usd": 7.2,
+      "mismatch_id": "m-05",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $7.20 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1005",
+      "classification": "timing",
+      "confidence": 0.93,
+      "eloss_cents": 52,
+      "materiality_usd": 7.45,
+      "mismatch_id": "m-06",
+      "reason": "confidence 0.93 \u2265 0.85 \u2227 materiality $7.45 \u2264 $50.00",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1009",
+      "classification": "timing",
+      "confidence": 0.93,
+      "eloss_cents": 66,
+      "materiality_usd": 9.45,
+      "mismatch_id": "m-07",
+      "reason": "confidence 0.93 \u2265 0.85 \u2227 materiality $9.45 \u2264 $50.00",
+      "subtype": "rolling_reserve"
+    }
+  ],
+  "night": "2026-07-01"
+}

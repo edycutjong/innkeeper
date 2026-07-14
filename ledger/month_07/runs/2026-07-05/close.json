@@ -1,0 +1,28 @@
+{
+  "merkle_root": "b6776fb8950b5e3abfa9fbdf9ace85027c188439851d307aecc5dbe4822679cb",
+  "night": "2026-07-05",
+  "pipeline_version": "innkeeper-audit/0.1.0+rules-v1",
+  "prev_root": "d175694c4fd5427be72739125c232e5a9cc51fc1204870913d9c0fdf86b363d3",
+  "signature": "e10a68f25f19cb135961156124dd4bdf6e49d76a61c5abea2a852e7be4cbf1944a7a1ced6e07a6d09a7d9cbeb490000182256c3d4652ff8eb1ce9b1e82381b0c",
+  "signer_pubkey": "689bcf7a1dbcaaf1a668a720f54676d26ba71e07a28c614ab427726d1ffcfe3c",
+  "stats": {
+    "date": "2026-07-05",
+    "delta_total_usd": 62.08,
+    "n_cleared": 9,
+    "n_matched": 12,
+    "n_mismatches": 9,
+    "n_queued": 0,
+    "n_txns": 35
+  },
+  "verdict_hashes": [
+    "659822e44e34969d491f717d091977878e1f9149fecfaa93855cfabf182b3205",
+    "4bb180dbd8a210bbaacf87cac066f649d69dfb94cdf62a53fab74c3b310ab25f",
+    "1ff93f102814724b4c1715c359fc41b46fd8e4adbcb2c7e73098884499b548cb",
+    "d577da98945cc31184c0e35383e5bf8a2aeb896e0481c56cb2165bc895cf2af8",
+    "e13693d9dff45354f9664cbcb10dad098f0d9d6301310b974e2a4d018aec45c6",
+    "66365f4738c3f035b555d4f52fde0f6a2d9d0a1c0150ee49aa632ca2d1ee496c",
+    "663a9e4816495f3bbf0f8e050ffcfc7bb87f4d501ab77cc88f68a3cf636fdbc9",
+    "2616f51bcb0618d5a0cc7b1d47f64ae61e70bc1fae1a3146efac1e8c1b50574d",
+    "5a5c7fc338fdb84578bb2f639a82c236e04da91c51d81af57c1aaefe270f60ab"
+  ]
+}

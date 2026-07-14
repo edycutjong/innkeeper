@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Coverage
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Secrets — production keys never land in git. The demo keypair under
+# fixtures/month_07/keys/ is committed on purpose (demo-only, see README).
+.env
+.env.*
+!.env.example
+secrets/
+infra/keys/
+*.production.key
+
+# OS
+.DS_Store

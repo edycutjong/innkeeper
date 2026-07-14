@@ -1,0 +1,35 @@
+# Alibaba Function Compute (Serverless Devs, FC 3.0) — the 02:00 timer trigger.
+# The cron IS the deployment proof: an unattended nightly invocation, not a
+# button a human clicks. See PROOF.md for what a live deploy shows and what is
+# (honestly) not yet deployed.
+edition: 3.0.0
+name: innkeeper-night-audit
+access: default
+
+vars:
+  region: ap-southeast-1  # Singapore (matches the DashScope -intl endpoint)
+
+resources:
+  night-audit:
+    component: fc3
+    props:
+      region: ${vars.region}
+      functionName: innkeeper-night-audit
+      description: "Unattended 2 AM three-way night audit → signed Merkle close"
+      runtime: python3.12
+      code: ../../            # the innkeeper-audit package + audit handler
+      handler: infra.fc.audit_handler.handler
+      memorySize: 512
+      timeout: 300            # a night runs in well under a minute; headroom for VL
+      environmentVariables:
+        DASHSCOPE_API_KEY: ${env.DASHSCOPE_API_KEY}       # qwen3-vl-plus / qwen3.7-max
+        INNKEEPER_SIGNING_KEY: ${env.INNKEEPER_SIGNING_KEY}  # Ed25519 close-signing key (hex)
+        INNKEEPER_ROOT: /mnt/audit                         # NAS-mounted ledger
+      triggers:
+        - triggerName: nightly-0200
+          triggerType: timer
+          triggerConfig:
+            # FC timer cron: sec min hour day month week → 02:00 every day
+            cronExpression: "0 0 2 * * *"
+            enable: true
+            payload: '{"night": "auto"}'

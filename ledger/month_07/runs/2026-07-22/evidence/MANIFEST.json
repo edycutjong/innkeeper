@@ -1,0 +1,9 @@
+{
+  "night": "2026-07-22",
+  "pdf_sha256": "1c2b0e4dbdcf9e3b0554108b91b855a7d8dd8c89a41f542287a0f3d6b2e31036",
+  "sha256": {
+    "ota_lines.json": "91a78ae6b6d7fa8992710ca26605055137137225d0bfcf6f25fcdf4bbba1b39f",
+    "pms.json": "ee0e0e176763e3ac5f7392dc5b75d2d204c977178c2a7ee8f958a8471bfc9927",
+    "processor.json": "96f13e7043c6ee29914720dd6a3bfc92cf6b5573ecb06d05edda3a597caa72e2"
+  }
+}

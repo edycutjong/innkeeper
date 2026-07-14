@@ -1,0 +1,137 @@
+{
+  "decisions": [
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1362",
+      "classification": "fx",
+      "confidence": 0.97,
+      "eloss_cents": 0,
+      "materiality_usd": 0.08,
+      "mismatch_id": "m-01",
+      "reason": "confidence 0.97 \u2265 0.85 \u2227 materiality $0.08 \u2264 $50.00",
+      "subtype": "fx_rounding"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1359",
+      "classification": "fx",
+      "confidence": 0.97,
+      "eloss_cents": 0,
+      "materiality_usd": 0.16,
+      "mismatch_id": "m-02",
+      "reason": "confidence 0.97 \u2265 0.85 \u2227 materiality $0.16 \u2264 $50.00",
+      "subtype": "fx_rounding"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1357",
+      "classification": "fx",
+      "confidence": 0.97,
+      "eloss_cents": 1,
+      "materiality_usd": 0.21,
+      "mismatch_id": "m-03",
+      "reason": "confidence 0.97 \u2265 0.85 \u2227 materiality $0.21 \u2264 $50.00",
+      "subtype": "fx_rounding"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1354",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 23,
+      "materiality_usd": 3.87,
+      "mismatch_id": "m-04",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $3.87 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1360",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 32,
+      "materiality_usd": 5.37,
+      "mismatch_id": "m-05",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $5.37 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1363",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 38,
+      "materiality_usd": 6.3,
+      "mismatch_id": "m-06",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $6.30 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1356",
+      "classification": "timing",
+      "confidence": 0.93,
+      "eloss_cents": 49,
+      "materiality_usd": 6.95,
+      "mismatch_id": "m-07",
+      "reason": "confidence 0.93 \u2265 0.85 \u2227 materiality $6.95 \u2264 $50.00",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "stl-00405",
+      "classification": "timing",
+      "confidence": 0.95,
+      "eloss_cents": 39,
+      "materiality_usd": 7.75,
+      "mismatch_id": "m-08",
+      "reason": "confidence 0.95 \u2265 0.85 \u2227 materiality $7.75 \u2264 $50.00",
+      "subtype": "reserve_release"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "stl-00407",
+      "classification": "timing",
+      "confidence": 0.95,
+      "eloss_cents": 39,
+      "materiality_usd": 7.75,
+      "mismatch_id": "m-09",
+      "reason": "confidence 0.95 \u2265 0.85 \u2227 materiality $7.75 \u2264 $50.00",
+      "subtype": "reserve_release"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1361",
+      "classification": "timing",
+      "confidence": 0.93,
+      "eloss_cents": 63,
+      "materiality_usd": 8.95,
+      "mismatch_id": "m-10",
+      "reason": "confidence 0.93 \u2265 0.85 \u2227 materiality $8.95 \u2264 $50.00",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "stl-00409",
+      "classification": "timing",
+      "confidence": 0.95,
+      "eloss_cents": 45,
+      "materiality_usd": 8.95,
+      "mismatch_id": "m-11",
+      "reason": "confidence 0.95 \u2265 0.85 \u2227 materiality $8.95 \u2264 $50.00",
+      "subtype": "reserve_release"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1365",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 56,
+      "materiality_usd": 9.3,
+      "mismatch_id": "m-12",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $9.30 \u2264 $50.00",
+      "subtype": "ota_commission"
+    }
+  ],
+  "night": "2026-07-30"
+}

@@ -1,0 +1,71 @@
+{
+  "decisions": [
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1185",
+      "classification": "fx",
+      "confidence": 0.97,
+      "eloss_cents": 1,
+      "materiality_usd": 0.22,
+      "mismatch_id": "m-01",
+      "reason": "confidence 0.97 \u2265 0.85 \u2227 materiality $0.22 \u2264 $50.00",
+      "subtype": "fx_rounding"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1181",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 28,
+      "materiality_usd": 4.65,
+      "mismatch_id": "m-02",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $4.65 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1182",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 32,
+      "materiality_usd": 5.37,
+      "mismatch_id": "m-03",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $5.37 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1183",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 32,
+      "materiality_usd": 5.37,
+      "mismatch_id": "m-04",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $5.37 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "stl-00136",
+      "classification": "timing",
+      "confidence": 0.95,
+      "eloss_cents": 45,
+      "materiality_usd": 8.95,
+      "mismatch_id": "m-05",
+      "reason": "confidence 0.95 \u2265 0.85 \u2227 materiality $8.95 \u2264 $50.00",
+      "subtype": "reserve_release"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1186",
+      "classification": "timing",
+      "confidence": 0.93,
+      "eloss_cents": 108,
+      "materiality_usd": 15.5,
+      "mismatch_id": "m-06",
+      "reason": "confidence 0.93 \u2265 0.85 \u2227 materiality $15.50 \u2264 $50.00",
+      "subtype": "rolling_reserve"
+    }
+  ],
+  "night": "2026-07-15"
+}

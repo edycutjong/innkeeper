@@ -1,0 +1,332 @@
+{
+  "night": "2026-07-13",
+  "txns": [
+    {
+      "amount_cents": 12900,
+      "date": "2026-07-13",
+      "folio": "folio-1150",
+      "kind": "sale",
+      "memo": "EUR card",
+      "method": "card",
+      "raw": {
+        "channel": "direct",
+        "guest": "O. Virtanen",
+        "room": "101"
+      },
+      "ref": "folio-1150",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 1100,
+      "date": "2026-07-13",
+      "folio": "folio-1150",
+      "kind": "extra",
+      "memo": "parking",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1150-E11",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 5600,
+      "date": "2026-07-13",
+      "folio": "folio-1150",
+      "kind": "extra",
+      "memo": "room svc",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1150-E5",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 4400,
+      "date": "2026-07-13",
+      "folio": "folio-1150",
+      "kind": "extra",
+      "memo": "laundry",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1150-E6",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 12900,
+      "date": "2026-07-13",
+      "folio": "folio-1151",
+      "kind": "sale",
+      "memo": "EUR card",
+      "method": "card",
+      "raw": {
+        "channel": "direct",
+        "guest": "T. Nguyen",
+        "room": "102"
+      },
+      "ref": "folio-1151",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 13900,
+      "date": "2026-07-13",
+      "folio": "folio-1152",
+      "kind": "sale",
+      "memo": "",
+      "method": "cash",
+      "raw": {
+        "channel": "direct",
+        "guest": "N. Adeyemi",
+        "room": "103"
+      },
+      "ref": "folio-1152",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 13900,
+      "date": "2026-07-13",
+      "folio": "folio-1153",
+      "kind": "sale",
+      "memo": "",
+      "method": "ota_collect",
+      "raw": {
+        "channel": "ota",
+        "guest": "H. Almeida",
+        "room": "104"
+      },
+      "ref": "folio-1153",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 3000,
+      "date": "2026-07-13",
+      "folio": "folio-1153",
+      "kind": "extra",
+      "memo": "parking",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1153-E8",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 14900,
+      "date": "2026-07-13",
+      "folio": "folio-1154",
+      "kind": "sale",
+      "memo": "EUR card",
+      "method": "card",
+      "raw": {
+        "channel": "direct",
+        "guest": "H. Almeida",
+        "room": "105"
+      },
+      "ref": "folio-1154",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 2400,
+      "date": "2026-07-13",
+      "folio": "folio-1154",
+      "kind": "extra",
+      "memo": "spa",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1154-E3",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 14900,
+      "date": "2026-07-13",
+      "folio": "folio-1155",
+      "kind": "sale",
+      "memo": "",
+      "method": "ota_collect",
+      "raw": {
+        "channel": "ota",
+        "guest": "N. Adeyemi",
+        "room": "106"
+      },
+      "ref": "folio-1155",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 15500,
+      "date": "2026-07-13",
+      "folio": "folio-1156",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "channel": "direct",
+        "guest": "B. Hansen",
+        "room": "107"
+      },
+      "ref": "folio-1156",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 2300,
+      "date": "2026-07-13",
+      "folio": "folio-1156",
+      "kind": "extra",
+      "memo": "spa",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1156-E10",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 6200,
+      "date": "2026-07-13",
+      "folio": "folio-1156",
+      "kind": "extra",
+      "memo": "breakfast",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1156-E4",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 17900,
+      "date": "2026-07-13",
+      "folio": "folio-1157",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "channel": "direct",
+        "guest": "B. Hansen",
+        "room": "202"
+      },
+      "ref": "folio-1157",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 4500,
+      "date": "2026-07-13",
+      "folio": "folio-1157",
+      "kind": "extra",
+      "memo": "laundry",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1157-E7",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 17900,
+      "date": "2026-07-13",
+      "folio": "folio-1158",
+      "kind": "sale",
+      "memo": "",
+      "method": "ota_collect",
+      "raw": {
+        "channel": "ota",
+        "guest": "E. Rossi",
+        "room": "203"
+      },
+      "ref": "folio-1158",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 18900,
+      "date": "2026-07-13",
+      "folio": "folio-1159",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "channel": "direct",
+        "guest": "J. Carver",
+        "room": "204"
+      },
+      "ref": "folio-1159",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 4700,
+      "date": "2026-07-13",
+      "folio": "folio-1159",
+      "kind": "extra",
+      "memo": "minibar",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1159-E9",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 21000,
+      "date": "2026-07-13",
+      "folio": "folio-1160",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "channel": "direct",
+        "guest": "V. Marino",
+        "room": "205"
+      },
+      "ref": "folio-1160",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 4800,
+      "date": "2026-07-13",
+      "folio": "folio-1160",
+      "kind": "extra",
+      "memo": "dinner",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1160-E12",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 24000,
+      "date": "2026-07-13",
+      "folio": "folio-1161",
+      "kind": "sale",
+      "memo": "",
+      "method": "ota_collect",
+      "raw": {
+        "channel": "ota",
+        "guest": "C. Novak",
+        "room": "206"
+      },
+      "ref": "folio-1161",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 1800,
+      "date": "2026-07-13",
+      "folio": "folio-1161",
+      "kind": "extra",
+      "memo": "bar",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1161-E1",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 31000,
+      "date": "2026-07-13",
+      "folio": "folio-1162",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "channel": "direct",
+        "guest": "Y. Chen",
+        "room": "207"
+      },
+      "ref": "folio-1162",
+      "src": "pms"
+    },
+    {
+      "amount_cents": 5200,
+      "date": "2026-07-13",
+      "folio": "folio-1162",
+      "kind": "extra",
+      "memo": "breakfast",
+      "method": "card",
+      "raw": {},
+      "ref": "folio-1162-E2",
+      "src": "pms"
+    }
+  ]
+}

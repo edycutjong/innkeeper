@@ -1,0 +1,9 @@
+{
+  "night": "2026-07-08",
+  "pdf_sha256": "1c2b0e4dbdcf9e3b0554108b91b855a7d8dd8c89a41f542287a0f3d6b2e31036",
+  "sha256": {
+    "ota_lines.json": "8405dc7d0b086b2fe84b4b239228cc4f91347421a05301ac39275aef3e79cc2a",
+    "pms.json": "4fa2dfa880638be9414e86fc3ca59c2d298206f8b1ed2f048aebf9781e17ae3c",
+    "processor.json": "e7e95af30a539fabef8613751d19f71c27949fd127980acc3322cafe60800488"
+  }
+}

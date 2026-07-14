@@ -1,0 +1,280 @@
+{
+  "night": "2026-07-18",
+  "txns": [
+    {
+      "amount_cents": 775,
+      "date": "2026-07-18",
+      "folio": null,
+      "kind": "reserve_release",
+      "memo": "reserve release for folio-1133 (held 2026-07-11)",
+      "method": "card",
+      "raw": {
+        "auth": "auth-3b068a",
+        "batch": "b1842",
+        "row": 0
+      },
+      "ref": "stl-00195",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 1200,
+      "date": "2026-07-18",
+      "folio": null,
+      "kind": "reserve_release",
+      "memo": "reserve release for folio-1137 (held 2026-07-11)",
+      "method": "card",
+      "raw": {
+        "auth": "auth-18a2bc",
+        "batch": "b1842",
+        "row": 0
+      },
+      "ref": "stl-00199",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 14900,
+      "currency": "USD",
+      "date": "2026-07-18",
+      "folio": "folio-1216",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-130260",
+        "batch": "b1842",
+        "row": 3
+      },
+      "ref": "stl-00321",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 14725,
+      "currency": "USD",
+      "date": "2026-07-18",
+      "folio": "folio-1218",
+      "kind": "sale",
+      "memo": "rolling reserve 5% held (release 2026-07-25)",
+      "method": "card",
+      "raw": {
+        "auth": "auth-768304",
+        "batch": "b1842",
+        "row": 4
+      },
+      "ref": "stl-00323",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 17005,
+      "currency": "USD",
+      "date": "2026-07-18",
+      "folio": "folio-1219",
+      "kind": "sale",
+      "memo": "rolling reserve 5% held (release 2026-07-25)",
+      "method": "card",
+      "raw": {
+        "auth": "auth-05e4d8",
+        "batch": "b1842",
+        "row": 5
+      },
+      "ref": "stl-00325",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 24000,
+      "currency": "USD",
+      "date": "2026-07-18",
+      "folio": "folio-1223",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-f82386",
+        "batch": "b1842",
+        "row": 6
+      },
+      "ref": "stl-00326",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 31000,
+      "currency": "USD",
+      "date": "2026-07-18",
+      "folio": "folio-1224",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-1c0bed",
+        "batch": "b1842",
+        "row": 7
+      },
+      "ref": "stl-00327",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 6100,
+      "date": "2026-07-18",
+      "folio": null,
+      "kind": "sale",
+      "memo": "ref missing \u2014 batch import",
+      "method": "card",
+      "raw": {
+        "auth": "auth-74e75a",
+        "batch": "b1842",
+        "row": 8
+      },
+      "ref": "stl-00328",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 5500,
+      "date": "2026-07-18",
+      "folio": "folio-1223-_E2",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-36ea32",
+        "batch": "b1842",
+        "row": 9
+      },
+      "ref": "stl-00329",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 4000,
+      "date": "2026-07-18",
+      "folio": "folio-1219-E3",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-184eba",
+        "batch": "b1842",
+        "row": 10
+      },
+      "ref": "stl-00330",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 5400,
+      "date": "2026-07-18",
+      "folio": "folio-1213-E4",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-3a1939",
+        "batch": "b1842",
+        "row": 11
+      },
+      "ref": "stl-00331",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 2300,
+      "date": "2026-07-18",
+      "folio": "folio-1219-E5",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-bd7587",
+        "batch": "b1842",
+        "row": 12
+      },
+      "ref": "stl-00332",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 2100,
+      "date": "2026-07-18",
+      "folio": "folio-1224-E6",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-ed3fe7",
+        "batch": "b1842",
+        "row": 13
+      },
+      "ref": "stl-00333",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 1900,
+      "date": "2026-07-18",
+      "folio": "folio-1212-E7",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-4dadbb",
+        "batch": "b1842",
+        "row": 14
+      },
+      "ref": "stl-00334",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 3600,
+      "date": "2026-07-18",
+      "folio": "folio-1214-E8",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-df5e76",
+        "batch": "b1842",
+        "row": 15
+      },
+      "ref": "stl-00335",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 4500,
+      "date": "2026-07-18",
+      "folio": "folio-1222-E9",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-56b3bf",
+        "batch": "b1842",
+        "row": 16
+      },
+      "ref": "stl-00336",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 2600,
+      "date": "2026-07-18",
+      "folio": "folio-1216-E10",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-05e7da",
+        "batch": "b1842",
+        "row": 17
+      },
+      "ref": "stl-00337",
+      "src": "processor"
+    },
+    {
+      "amount_cents": 1300,
+      "date": "2026-07-18",
+      "folio": "folio-1212-E11",
+      "kind": "sale",
+      "memo": "",
+      "method": "card",
+      "raw": {
+        "auth": "auth-7c3128",
+        "batch": "b1842",
+        "row": 18
+      },
+      "ref": "stl-00338",
+      "src": "processor"
+    }
+  ]
+}

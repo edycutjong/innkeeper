@@ -1,0 +1,60 @@
+{
+  "decisions": [
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1066",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 25,
+      "materiality_usd": 4.17,
+      "mismatch_id": "m-01",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $4.17 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1067",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 27,
+      "materiality_usd": 4.47,
+      "mismatch_id": "m-02",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $4.47 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1072",
+      "classification": "fee",
+      "confidence": 0.94,
+      "eloss_cents": 32,
+      "materiality_usd": 5.37,
+      "mismatch_id": "m-03",
+      "reason": "confidence 0.94 \u2265 0.85 \u2227 materiality $5.37 \u2264 $50.00",
+      "subtype": "ota_commission"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1064",
+      "classification": "timing",
+      "confidence": 0.93,
+      "eloss_cents": 45,
+      "materiality_usd": 6.45,
+      "mismatch_id": "m-04",
+      "reason": "confidence 0.93 \u2265 0.85 \u2227 materiality $6.45 \u2264 $50.00",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "action": "auto_clear",
+      "anchor_ref": "folio-1074",
+      "classification": "timing",
+      "confidence": 0.93,
+      "eloss_cents": 73,
+      "materiality_usd": 10.5,
+      "mismatch_id": "m-05",
+      "reason": "confidence 0.93 \u2265 0.85 \u2227 materiality $10.50 \u2264 $50.00",
+      "subtype": "rolling_reserve"
+    }
+  ],
+  "night": "2026-07-06"
+}

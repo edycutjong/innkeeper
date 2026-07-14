@@ -1,0 +1,2543 @@
+{
+  "counts": {
+    "duplicate": 1,
+    "fee": 135,
+    "fx": 41,
+    "timing": 102,
+    "total": 281,
+    "true_error": 2
+  },
+  "mismatches": [
+    {
+      "anchor_ref": "folio-1001",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-01",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1002",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-01",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1004",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-01",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1005",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-01",
+      "note": "rolling reserve 5% held (release 2026-07-08)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1008",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-01",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1009",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-01",
+      "note": "rolling reserve 5% held (release 2026-07-08)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1010",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-01",
+      "note": "3% commission on 240.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1014",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-02",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1016",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-02",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1017",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-02",
+      "note": "rolling reserve 5% held (release 2026-07-09)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1019",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-02",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1020",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-02",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1021",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-02",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1023",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-02",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1024",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-02",
+      "note": "3% commission on 240.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1028",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-03",
+      "note": "rolling reserve 5% held (release 2026-07-10)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1031",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-03",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1034",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-03",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1036",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-03",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1038",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-03",
+      "note": "rolling reserve 5% held (release 2026-07-10)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1039",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-03",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1040",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1041",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1042",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1043",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1044",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1045",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1046",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1047",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1048",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "rolling reserve 5% held (release 2026-07-11)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1049",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "rolling reserve 5% held (release 2026-07-11)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1050",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-04",
+      "note": "rolling reserve 5% held (release 2026-07-11)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "stl-e0777",
+      "class": "true_error",
+      "expected_action": "queue",
+      "night": "2026-07-04",
+      "note": "card terminal capture with no PMS folio",
+      "severity": "high",
+      "subtype": "unposted_walkin"
+    },
+    {
+      "anchor_ref": "folio-1052",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-05",
+      "note": "rolling reserve 5% held (release 2026-07-12)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1053",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-05",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1054",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-05",
+      "note": "rolling reserve 5% held (release 2026-07-12)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1057",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-05",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1058",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-05",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1059",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-05",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1060",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-05",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1061",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-05",
+      "note": "rolling reserve 5% held (release 2026-07-12)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1062",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-05",
+      "note": "3% commission on 310.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1064",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-06",
+      "note": "rolling reserve 5% held (release 2026-07-13)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1066",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-06",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1067",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-06",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1072",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-06",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1074",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-06",
+      "note": "rolling reserve 5% held (release 2026-07-13)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1077",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-07",
+      "note": "rolling reserve 5% held (release 2026-07-14)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1078",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-07",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1079",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-07",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1081",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-07",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1082",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-07",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1084",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-07",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1085",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-07",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1086",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-07",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1087",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-07",
+      "note": "3% commission on 240.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1088",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1092",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1095",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1096",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "rolling reserve 5% held (release 2026-07-15)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1098",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1099",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1100",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "3% commission on 240.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1101",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "stl-00003",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "reserve release for folio-1005 (held 2026-07-01)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00007",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-08",
+      "note": "reserve release for folio-1009 (held 2026-07-01)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1102",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1103",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "rolling reserve 5% held (release 2026-07-16)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1104",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1105",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1106",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "rolling reserve 5% held (release 2026-07-16)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1108",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "rolling reserve 5% held (release 2026-07-16)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1109",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "3% commission + $12.00 promo co-funding footnote",
+      "severity": "low",
+      "subtype": "promo_cofunding"
+    },
+    {
+      "anchor_ref": "folio-1110",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1111",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1112",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1113",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "stl-00023",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-09",
+      "note": "reserve release for folio-1017 (held 2026-07-02)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1114",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-10",
+      "note": "rolling reserve 5% held (release 2026-07-17)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1115",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-10",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1116",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-10",
+      "note": "rolling reserve 5% held (release 2026-07-17)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1120",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-10",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1121",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-10",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1122",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-10",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1125",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-10",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "stl-00039",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-10",
+      "note": "reserve release for folio-1028 (held 2026-07-03)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00047",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-10",
+      "note": "reserve release for folio-1038 (held 2026-07-03)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1126",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1127",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1128",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1130",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1131",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1132",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1133",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "rolling reserve 5% held (release 2026-07-18)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1135",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1136",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1137",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "rolling reserve 5% held (release 2026-07-18)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "stl-00064",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "reserve release for folio-1048 (held 2026-07-04)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00066",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "reserve release for folio-1049 (held 2026-07-04)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00068",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-11",
+      "note": "reserve release for folio-1050 (held 2026-07-04)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00198",
+      "class": "duplicate",
+      "expected_action": "queue",
+      "night": "2026-07-11",
+      "note": "same auth captured twice",
+      "severity": "high",
+      "subtype": "duplicate_capture"
+    },
+    {
+      "anchor_ref": "folio-1140",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1141",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1144",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "rolling reserve 5% held (release 2026-07-19)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1146",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1147",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1148",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "3% commission on 240.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1149",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "rolling reserve 5% held (release 2026-07-19)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "stl-00080",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "reserve release for folio-1052 (held 2026-07-05)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00082",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "reserve release for folio-1054 (held 2026-07-05)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00086",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-12",
+      "note": "reserve release for folio-1061 (held 2026-07-05)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1150",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1151",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1153",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1154",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1155",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1156",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "rolling reserve 5% held (release 2026-07-20)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1158",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1160",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "rolling reserve 5% held (release 2026-07-20)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1161",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "3% commission on 240.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00098",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "reserve release for folio-1064 (held 2026-07-06)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00106",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-13",
+      "note": "reserve release for folio-1074 (held 2026-07-06)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1163",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-14",
+      "note": "rolling reserve 5% held (release 2026-07-21)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1164",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-14",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1166",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-14",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1167",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-14",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1168",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-14",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1169",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-14",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1171",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-14",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00118",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-14",
+      "note": "reserve release for folio-1077 (held 2026-07-07)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1181",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-15",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1182",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-15",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1183",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-15",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1185",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-15",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1186",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-15",
+      "note": "rolling reserve 5% held (release 2026-07-22)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "stl-00136",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-15",
+      "note": "reserve release for folio-1096 (held 2026-07-08)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1188",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1189",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "rolling reserve 5% held (release 2026-07-23)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1191",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1193",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1194",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1195",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1200",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "3% commission on 310.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00151",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "reserve release for folio-1103 (held 2026-07-09)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00154",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "reserve release for folio-1106 (held 2026-07-09)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00157",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-16",
+      "note": "reserve release for folio-1108 (held 2026-07-09)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1203",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-17",
+      "note": "rolling reserve 5% held (release 2026-07-24)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1205",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-17",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1206",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-17",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1208",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-17",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1210",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-17",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1211",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-17",
+      "note": "3% commission on 310.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00171",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-17",
+      "note": "reserve release for folio-1114 (held 2026-07-10)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00174",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-17",
+      "note": "reserve release for folio-1116 (held 2026-07-10)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00320",
+      "class": "true_error",
+      "expected_action": "queue",
+      "night": "2026-07-17",
+      "note": "card terminal capture with no PMS folio",
+      "severity": "high",
+      "subtype": "unposted_walkin"
+    },
+    {
+      "anchor_ref": "folio-1212",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1214",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1215",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1217",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1218",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "rolling reserve 5% held (release 2026-07-25)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1219",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "rolling reserve 5% held (release 2026-07-25)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1221",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1222",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00195",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "reserve release for folio-1133 (held 2026-07-11)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00199",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-18",
+      "note": "reserve release for folio-1137 (held 2026-07-11)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1225",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1226",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "rolling reserve 5% held (release 2026-07-26)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1227",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1228",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1230",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1232",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "rolling reserve 5% held (release 2026-07-26)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1233",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1235",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "stl-00212",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "reserve release for folio-1144 (held 2026-07-12)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00215",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-19",
+      "note": "reserve release for folio-1149 (held 2026-07-12)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1236",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-20",
+      "note": "rolling reserve 5% held (release 2026-07-27)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1240",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-20",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1242",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-20",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1243",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-20",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1244",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-20",
+      "note": "rolling reserve 5% held (release 2026-07-27)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1246",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-20",
+      "note": "rolling reserve 5% held (release 2026-07-27)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "stl-00231",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-20",
+      "note": "reserve release for folio-1156 (held 2026-07-13)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00235",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-20",
+      "note": "reserve release for folio-1160 (held 2026-07-13)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1248",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-21",
+      "note": "rolling reserve 5% held (release 2026-07-28)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1250",
+      "class": "fee",
+      "expected_action": "queue",
+      "night": "2026-07-21",
+      "note": "two_pass_disagreement on page-broken row (I5)",
+      "severity": "medium",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1252",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-21",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1253",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-21",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1254",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-21",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1256",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-21",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1257",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-21",
+      "note": "3% commission on 240.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1258",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-21",
+      "note": "rolling reserve 5% held (release 2026-07-28)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "stl-00250",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-21",
+      "note": "reserve release for folio-1163 (held 2026-07-14)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1259",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-22",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1260",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-22",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1262",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-22",
+      "note": "rolling reserve 5% held (release 2026-07-29)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1263",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-22",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1265",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-22",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1266",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-22",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1269",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-22",
+      "note": "rolling reserve 5% held (release 2026-07-29)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "stl-00273",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-22",
+      "note": "reserve release for folio-1186 (held 2026-07-15)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1270",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1271",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1272",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1275",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1276",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "rolling reserve 5% held (release 2026-07-30)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1277",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "rolling reserve 5% held (release 2026-07-30)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1278",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "rolling reserve 5% held (release 2026-07-30)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1279",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1280",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00284",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-23",
+      "note": "reserve release for folio-1189 (held 2026-07-16)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1282",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-24",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1284",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-24",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1286",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-24",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1287",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-24",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1290",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-24",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1292",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-24",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1293",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-24",
+      "note": "3% commission on 310.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00304",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-24",
+      "note": "reserve release for folio-1203 (held 2026-07-17)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1294",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1295",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1296",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1298",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1300",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1301",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1302",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1303",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1306",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "3% commission on 240.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00322",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "reserve release for folio-1218 (held 2026-07-18)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00324",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-25",
+      "note": "reserve release for folio-1219 (held 2026-07-18)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1313",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-26",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1314",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-26",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1315",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-26",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1316",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-26",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1317",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-26",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1318",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-26",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "stl-00340",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-26",
+      "note": "reserve release for folio-1226 (held 2026-07-19)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00343",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-26",
+      "note": "reserve release for folio-1232 (held 2026-07-19)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1319",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1321",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1322",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1324",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1325",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1326",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1328",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1329",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1330",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "3% commission on 310.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00352",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "reserve release for folio-1236 (held 2026-07-20)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00357",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "reserve release for folio-1244 (held 2026-07-20)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00360",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-27",
+      "note": "reserve release for folio-1246 (held 2026-07-20)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1331",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-28",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1332",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-28",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1333",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-28",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1335",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-28",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1339",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-28",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1341",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-28",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "stl-00372",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-28",
+      "note": "reserve release for folio-1248 (held 2026-07-21)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00374",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-28",
+      "note": "reserve release for folio-1258 (held 2026-07-21)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1342",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1344",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1345",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "3% commission on 139.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1346",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "3% commission on 149.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1348",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "3% commission on 155.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1349",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1350",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "3% commission on 189.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1351",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1352",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "3% commission on 240.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1353",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "stl-00387",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "reserve release for folio-1262 (held 2026-07-22)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00392",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-29",
+      "note": "reserve release for folio-1269 (held 2026-07-22)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "folio-1354",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "3% commission on 129.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1356",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1357",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1359",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1360",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "3% commission on 179.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1361",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "rolling reserve 5% held (release next-month)",
+      "severity": "low",
+      "subtype": "rolling_reserve"
+    },
+    {
+      "anchor_ref": "folio-1362",
+      "class": "fx",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "FX conversion EUR->USD",
+      "severity": "low",
+      "subtype": "fx_rounding"
+    },
+    {
+      "anchor_ref": "folio-1363",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "3% commission on 210.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "folio-1365",
+      "class": "fee",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "3% commission on 310.00",
+      "severity": "low",
+      "subtype": "ota_commission"
+    },
+    {
+      "anchor_ref": "stl-00405",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "reserve release for folio-1276 (held 2026-07-23)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00407",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "reserve release for folio-1277 (held 2026-07-23)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    },
+    {
+      "anchor_ref": "stl-00409",
+      "class": "timing",
+      "expected_action": "auto_clear",
+      "night": "2026-07-30",
+      "note": "reserve release for folio-1278 (held 2026-07-23)",
+      "severity": "low",
+      "subtype": "reserve_release"
+    }
+  ],
+  "month": "2026-07",
+  "seed": 20260701
+}
