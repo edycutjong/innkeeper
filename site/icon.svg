@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Innkeeper icon">
+  <defs>
+    <linearGradient id="ig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6EE7B7"/><stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="ib" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E7C79A"/><stop offset="1" stop-color="#D4A373"/>
+    </linearGradient>
+    <radialGradient id="iglow" cx=".5" cy=".42" r=".62">
+      <stop offset="0" stop-color="#10B981" stop-opacity=".45"/><stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="#0C0F0D"/>
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="url(#iglow)">
+    <animate attributeName="opacity" values=".45;.95;.45" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <!-- ring ripples from the bell -->
+  <circle cx="256" cy="252" r="150" fill="none" stroke="#10B981" stroke-width="6" opacity="0">
+    <animate attributeName="r" values="130;196" dur="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".5;0" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="256" cy="252" r="150" fill="none" stroke="#D4A373" stroke-width="4" opacity="0">
+    <animate attributeName="r" values="130;196" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".4;0" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+  </circle>
+  <!-- service bell (wiggles like it was just tapped) -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="0 256 340;0 256 340;-4 256 340;3.5 256 340;-2 256 340;1 256 340;0 256 340;0 256 340"
+      keyTimes="0;.55;.6;.66;.72;.78;.84;1" dur="2.6s" repeatCount="indefinite"/>
+    <rect x="236" y="128" width="40" height="26" rx="13" fill="url(#ib)"/>
+    <path d="M116 340 A140 140 0 0 1 396 340 Z" fill="url(#ig)"/>
+    <circle cx="256" cy="212" r="0" fill="none"/>
+  </g>
+  <!-- ledger base line + checkmark -->
+  <rect x="96" y="356" width="320" height="26" rx="13" fill="url(#ib)"/>
+  <path d="M172 432 L228 472 L344 408" fill="none" stroke="url(#ig)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"
+        pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0;0;100" keyTimes="0;.3;.85;1" dur="4s" repeatCount="indefinite"/>
+  </path>
+</svg>
