@@ -1,9 +1,9 @@
 {
   "merkle_root": "8c148aba6433be7d0d8bfafe7674cf38239b5d54681d64ba7bf4166bf5f2d624",
   "night": "2026-07-06",
-  "pipeline_version": "innkeeper-audit/0.1.0+rules-v1",
+  "pipeline_version": "innkeeper-audit/1.0.0+rules-v1",
   "prev_root": "b6776fb8950b5e3abfa9fbdf9ace85027c188439851d307aecc5dbe4822679cb",
-  "signature": "1038edfe36596323be2b7ea908224c0321b75207480385915b7a546e3e50c73324350c66ac1faf2c940c2171460a960ddddfb35b9476c9636557e9a4b69fbb08",
+  "signature": "cf95f0b6e9a6db28097dbe740ec45c0a1befc0a7cf9fc1bf7e0388eaa84a9aa2d91a80a9f5dae854d3db1598ca24bcba81ea770bd0f5506d0ea4fe5107424706",
   "signer_pubkey": "689bcf7a1dbcaaf1a668a720f54676d26ba71e07a28c614ab427726d1ffcfe3c",
   "stats": {
     "date": "2026-07-06",
