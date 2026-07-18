@@ -25,7 +25,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-release = ["python-semantic-release>=9,<10"]
+release = ["python-semantic-release>=9,<11"]
 live = [
     # LiveQwen transport (DashScope OpenAI-compatible mode) + PDF page rasterizer.
     "openai>=1.40",
