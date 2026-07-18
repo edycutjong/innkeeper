@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "innkeeper-audit"
-version = "1.0.0"
+version = "1.1.0"
 description = "Autopilot night audit for small hotels: three-way reconciliation, evidence-cited verdicts, expected-loss policy gate, Ed25519-signed Merkle night closes."
 readme = "README.md"
 requires-python = ">=3.12"
