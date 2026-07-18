@@ -29,7 +29,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
       - name: Install dependencies
-        run: pip install -e ".[dev]"
+        run: pip install -e ".[live,dev]" # live extra: test_qwen_live.py exercises the LiveQwen wiring
       - name: Lint (ruff)
         run: ruff check .
       - name: Type check (mypy)
