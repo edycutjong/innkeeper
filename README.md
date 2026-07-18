@@ -71,12 +71,12 @@ time they let it slide, it was $2,300 by month-end.*
 python3.12 -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 
-innkeeper seed --nights 30       # deterministic month + rendered OTA statement PDFs
-innkeeper run --night 2026-07-04 # fetch → extract → match → adjudicate → gate → signed close
-innkeeper replay --night 2026-07-04   # re-derive byte-identical, zero keys (invariant I4)
-innkeeper verify-chain           # recompute every root, check every signature
-innkeeper bench                  # 277/281 auto-cleared · 0 false clears · accuracy 0.9964
-pytest -q                        # 404 passed
+innkeeper seed --nights 30        # deterministic month + rendered OTA statement PDFs
+innkeeper run --night 2026-07-04  # fetch → extract → match → adjudicate → gate → signed close
+innkeeper replay --night 2026-07-04  # re-derive byte-identical, zero keys (invariant I4)
+innkeeper verify-chain            # recompute every root, check every signature
+innkeeper bench                   # 277/281 auto-cleared · 0 false clears · accuracy 0.9964
+pytest -q                         # 404 passed
 ```
 
 The full demo script is in [`DEMO.md`](./DEMO.md).
@@ -209,20 +209,20 @@ docs/                  BENCH.md · friction-log.md
 
 ```bash
 # ── Code Quality ────────────────────────────
-ruff check .                                   # lint
-mypy src                                       # type check (advisory on qwen/live.py)
-pytest --cov=innkeeper_audit --cov-report=term # 404 tests, 100% coverage
+ruff check .                                    # lint
+mypy src                                        # type check (advisory on qwen/live.py)
+pytest --cov=innkeeper_audit --cov-report=term  # 404 tests, 100% coverage
 
 # ── Offline Proof (the invariants, live) ────
 innkeeper seed --nights 30
 innkeeper run --night 2026-07-04
-innkeeper replay --night 2026-07-04            # I4: byte-identical re-derivation
-innkeeper verify-chain                         # I3: every root + signature checked
-python scripts/verify_offline.py               # socket-guarded tamper proof
-innkeeper bench                                # I1: 0 false auto-clears, always
+innkeeper replay --night 2026-07-04             # I4: byte-identical re-derivation
+innkeeper verify-chain                          # I3: every root + signature checked
+python scripts/verify_offline.py                # socket-guarded tamper proof
+innkeeper bench                                 # I1: 0 false auto-clears, always
 
 # ── Security ────────────────────────────────
-pip-audit                                      # dependency vulnerability scan
+pip-audit                                       # dependency vulnerability scan
 ```
 
 | Layer | Tool | Status |
