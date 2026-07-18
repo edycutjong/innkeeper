@@ -14,6 +14,8 @@ import json
 import sys
 from typing import Any, Callable
 
+from innkeeper_audit import __version__
+
 PROTOCOL_VERSION = "2024-11-05"
 Handler = Callable[[dict[str, Any]], Any]
 
@@ -24,7 +26,7 @@ def text_content(obj: Any) -> dict[str, Any]:
 
 
 class MockMCPServer:
-    def __init__(self, name: str, version: str = "0.1.0") -> None:
+    def __init__(self, name: str, version: str = __version__) -> None:
         self.name = name
         self.version = version
         self._tools: dict[str, dict[str, Any]] = {}
