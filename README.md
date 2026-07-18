@@ -10,7 +10,6 @@
   [![Pitch Deck](https://img.shields.io/badge/%F0%9F%93%BD%EF%B8%8F_Pitch-Deck-f59e0b?style=for-the-badge)](https://innkeeper.edycu.dev/pitch/)
   [![Demo Path](https://img.shields.io/badge/%F0%9F%95%B9%EF%B8%8F_Judge-Demo_Path-F59E0B?style=for-the-badge)](DEMO.md)
   [![QwenCloud Hackathon](https://img.shields.io/badge/QwenCloud-Track_4_Autopilot_Agent-8b5cf6?style=for-the-badge)](https://qwencloud-hackathon.devpost.com/)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-06b6d4?style=for-the-badge)](LICENSE)
 
   <br/>
 
@@ -21,6 +20,7 @@
   ![Ed25519](https://img.shields.io/badge/Signed-Ed25519_%2B_Merkle-2E8B57?style=flat)
   ![Tests](https://img.shields.io/badge/tests-404_passing-brightgreen?style=flat)
   ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-06b6d4)](LICENSE)
   [![CI](https://github.com/edycutjong/innkeeper/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/innkeeper/actions/workflows/ci.yml)
 </div>
 
@@ -263,7 +263,7 @@ and [`SECURITY.md`](./.github/SECURITY.md).
 ## 📄 License
 [MIT](LICENSE) © 2026 Edy Cu
 
-## Versioning
+## 🏷️ Versioning
 
 This project uses [Semantic Versioning](https://semver.org) with **fully automated** version
 management driven by [Conventional Commits](https://www.conventionalcommits.org) — the version is
