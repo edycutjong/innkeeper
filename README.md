@@ -19,7 +19,7 @@
   ![Ed25519](https://img.shields.io/badge/Signed-Ed25519_%2B_Merkle-2E8B57?style=flat)
   ![Tests](https://img.shields.io/badge/tests-404_passing-brightgreen?style=flat)
   ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat)
-  [![CI](https://github.com/edycu/innkeeper/actions/workflows/ci.yml/badge.svg)](https://github.com/edycu/innkeeper/actions/workflows/ci.yml)
+  [![CI](https://github.com/edycutjong/innkeeper/actions/workflows/ci.yml/badge.svg)](https://github.com/edycutjong/innkeeper/actions/workflows/ci.yml)
 </div>
 
 > An autopilot night auditor for small hotels. Every night at 2 AM it reconciles
