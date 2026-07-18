@@ -62,8 +62,37 @@ class LiveQwen:
             from openai import OpenAI
         except ImportError as exc:  # pragma: no cover - live-only path
             raise RuntimeError("LiveQwen needs the 'live' extra: pip install -e '.[live]'") from exc
-        self._client = OpenAI(api_key=self.api_key, base_url=base_url)
+        # A per-request timeout keeps one slow response (a stray thinking spin,
+        # a large VL page) from hanging the whole audit run.
+        self._client = OpenAI(
+            api_key=self.api_key, base_url=base_url, timeout=120.0, max_retries=2
+        )
         self._fake = FakeQwen()  # evidence construction + extraction fallback
+
+    # ------------------------------------------------------------------ #
+    # one JSON chat call — thinking is set EXPLICITLY per call
+    # ------------------------------------------------------------------ #
+
+    def _create(
+        self,
+        *,
+        model: str,
+        messages: list[dict[str, Any]],
+        temperature: float,
+        thinking: bool = False,
+    ):  # pragma: no cover - live
+        # Qwen3 models default to "thinking" mode, spending thousands of
+        # reasoning tokens per call (~45s+, and it times out on large prompts).
+        # So we set enable_thinking EXPLICITLY on every call: OFF for the VL OCR
+        # passes (structured emission, no reasoning needed), ON only for the
+        # adjudication step where the judgment IS the reasoning.
+        return self._client.chat.completions.create(
+            model=model,
+            messages=messages,
+            response_format={"type": "json_object"},
+            temperature=temperature,
+            extra_body={"enable_thinking": bool(thinking)},
+        )
 
     # ------------------------------------------------------------------ #
     # adjudication: qwen3.7-max + thinking + structured output
@@ -75,15 +104,14 @@ class LiveQwen:
             return self._fake.adjudicate(m, ctx)
 
         prompt = self._mismatch_prompt(m)
-        resp = self._client.chat.completions.create(
+        resp = self._create(
             model=MODEL_ADJUDICATOR,
             messages=[
                 {"role": "system", "content": _ADJUDICATION_SYSTEM},
                 {"role": "user", "content": prompt},
             ],
-            response_format={"type": "json_object"},
             temperature=0.0,
-            extra_body={"enable_thinking": True},
+            thinking=True,  # adjudication is the one genuine reasoning step
         )
         data = json.loads(resp.choices[0].message.content)
         evidence = self._fake_evidence(m, ctx)
@@ -175,11 +203,11 @@ class LiveQwen:
         ]
         for img in images:
             content.append({"type": "image_url", "image_url": {"url": img}})
-        resp = self._client.chat.completions.create(
+        resp = self._create(
             model=MODEL_VL,
             messages=[{"role": "user", "content": content}],
-            response_format={"type": "json_object"},
             temperature=temperature,
+            thinking=False,  # OCR extraction: no reasoning, keep it fast
         )
         return json.loads(resp.choices[0].message.content).get("lines", [])
 
