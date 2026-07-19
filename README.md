@@ -9,6 +9,7 @@
   [![Live](https://img.shields.io/badge/%F0%9F%9B%8E%EF%B8%8F_Live-innkeeper.edycu.dev-06b6d4?style=for-the-badge)](https://innkeeper.edycu.dev)
   [![Live on Alibaba Function Compute](https://img.shields.io/badge/%E2%98%81%EF%B8%8F_Live-Alibaba_Function_Compute-FF6A00?style=for-the-badge)](https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/health)
   [![Watch Demo](https://img.shields.io/badge/%E2%96%B6_Watch-Demo_Video-FF0000?style=for-the-badge)](https://youtu.be/LuK4dX-PRd0)
+  [![Devpost](https://img.shields.io/badge/Devpost-Submission-003E54?style=for-the-badge&logo=devpost)](https://devpost.com/software/innkeeper)
   [![Pitch Deck](https://img.shields.io/badge/%F0%9F%93%BD%EF%B8%8F_Pitch-Deck-f59e0b?style=for-the-badge)](https://innkeeper.edycu.dev/pitch/)
   [![Demo Path](https://img.shields.io/badge/%F0%9F%95%B9%EF%B8%8F_Judge-Demo_Path-F59E0B?style=for-the-badge)](DEMO.md)
   [![QwenCloud Hackathon](https://img.shields.io/badge/QwenCloud-Track_4_Autopilot_Agent-8b5cf6?style=for-the-badge)](https://qwencloud-hackathon.devpost.com/)
