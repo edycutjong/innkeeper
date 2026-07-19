@@ -1,0 +1,4 @@
+typer>=0.16
+pydantic>=2.7
+pynacl>=1.5
+reportlab>=4.1

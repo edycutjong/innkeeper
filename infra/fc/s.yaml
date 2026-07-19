@@ -1,35 +1,48 @@
-# Alibaba Function Compute (Serverless Devs, FC 3.0) — the 02:00 timer trigger.
-# The cron IS the deployment proof: an unattended nightly invocation, not a
-# button a human clicks. See PROOF.md for what a live deploy shows and what is
-# (honestly) not yet deployed.
+# Serverless Devs (s.yaml) — Innkeeper on Alibaba Function Compute 3.0.
+#
+# MANAGED python3.10 runtime (no container / no ACR / no real-name verification).
+# Innkeeper targets 3.12 and uses enum.StrEnum (3.11+); infra/fc/wsgi.py shims it
+# before importing the package, so the app runs unchanged on the 3.10 runtime.
+#
+#   s build --use-docker   # installs requirements.txt deps under code/python
+#   s deploy -y            # zips code, creates the fn + anonymous HTTP trigger
+#
+# Endpoints (anonymous HTTP trigger, all offline / zero keys):
+#   GET /verify   re-verify the committed signed-close chain + replay + tamper (I2/I3/I4)
+#   GET /run      run one deterministic offline night audit (?night=YYYY-MM-DD)
+#   GET /health   liveness
+
 edition: 3.0.0
-name: innkeeper-night-audit
+name: innkeeper-fc
 access: default
 
 vars:
-  region: ap-southeast-1  # Singapore (matches the DashScope -intl endpoint)
+  region: ap-southeast-1
 
 resources:
-  night-audit:
+  innkeeper:
     component: fc3
     props:
       region: ${vars.region}
-      functionName: innkeeper-night-audit
-      description: "Unattended 2 AM three-way night audit → signed Merkle close"
-      runtime: python3.12
-      code: ../../            # the innkeeper-audit package + audit handler
-      handler: infra.fc.audit_handler.handler
+      functionName: innkeeper
+      description: "Innkeeper — autopilot night audit for small hotels (Qwen Cloud)"
+      runtime: python3.10
+      handler: infra.fc.wsgi.handler
+      cpu: 0.35
       memorySize: 512
-      timeout: 300            # a night runs in well under a minute; headroom for VL
+      diskSize: 512
+      timeout: 60
+      instanceConcurrency: 5
+      # code root = the build dir (this file lives in infra/fc/).
+      code: ../../
       environmentVariables:
-        DASHSCOPE_API_KEY: ${env.DASHSCOPE_API_KEY}       # qwen3-vl-plus / qwen3.7-max
-        INNKEEPER_SIGNING_KEY: ${env.INNKEEPER_SIGNING_KEY}  # Ed25519 close-signing key (hex)
-        INNKEEPER_ROOT: /mnt/audit                         # NAS-mounted ledger
+        # s build installs requirements.txt deps under /code/python
+        PYTHONPATH: /code/python
       triggers:
-        - triggerName: nightly-0200
-          triggerType: timer
+        - triggerName: http
+          triggerType: http
           triggerConfig:
-            # FC timer cron: sec min hour day month week → 02:00 every day
-            cronExpression: "0 0 2 * * *"
-            enable: true
-            payload: '{"night": "auto"}'
+            authType: anonymous
+            methods:
+              - GET
+              - POST

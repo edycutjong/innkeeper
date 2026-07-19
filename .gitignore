@@ -26,3 +26,7 @@ infra/keys/
 
 # OS
 .DS_Store
+
+# Alibaba Function Compute (Serverless Devs) build artifacts
+/python/
+.s/

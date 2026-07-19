@@ -16,4 +16,4 @@ Night close signed by `689bcf7a1dbcaaf1…` · Merkle root `d175694c4fd5427b…`
 - **FX rounding** × 4 · $0.69 total
 - **timing** × 3 · $23.15 total
 
-_Δ reconciled tonight: $43.01 · pipeline `innkeeper-audit/1.0.0+rules-v1`_
+_Δ reconciled tonight: $43.01 · pipeline `innkeeper-audit/1.1.1+rules-v1`_
