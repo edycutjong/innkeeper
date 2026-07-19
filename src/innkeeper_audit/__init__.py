@@ -5,5 +5,5 @@ Pipeline: fetch (3x MCP) -> normalize -> deterministic match -> adjudicate
 Merkle night close.
 """
 
-__version__ = "1.1.1"
+__version__ = "1.2.0"
 PIPELINE_VERSION = f"innkeeper-audit/{__version__}+rules-v1"
