@@ -28,11 +28,17 @@ s deploy                              # Serverless Devs
 The recording of that 02:00 timer line firing on its own — separate from the
 demo video — is the strongest "unattended production" artifact in the portfolio.
 
-## Honest status (not yet live)
+## Status
 
-- The timer **is not deployed** in this submission: it needs an Alibaba Cloud
-  account + a funded `DASHSCOPE_API_KEY`, which are not wired here. The config is
-  real and complete; the live console recording is the pending step.
+**Deployed live on Alibaba Function Compute** (managed `python3.10`, HTTP handler
+`infra.fc.wsgi.handler`) at <https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run>
+— offline `/health`, `/verify`, `/run` endpoints; full transcript in
+[`../../docs/proof/DEPLOY_PROOF.md`](../../docs/proof/DEPLOY_PROOF.md).
+
+- The **02:00 timer trigger** described above is configured in `s.yaml` but the
+  captured console recording of the cron firing on its own is the pending step:
+  it needs a funded `DASHSCOPE_API_KEY` in the FC env. The deployed HTTP
+  endpoints run offline with zero keys today.
 - The signed-close **private key** lives only in the FC env; the committed demo
   keypair (derived from the fixture seed) is for local verification and is
   labelled demo-only.

@@ -7,6 +7,7 @@
   <br/><br/>
 
   [![Live](https://img.shields.io/badge/%F0%9F%9B%8E%EF%B8%8F_Live-innkeeper.edycu.dev-06b6d4?style=for-the-badge)](https://innkeeper.edycu.dev)
+  [![Live on Alibaba Function Compute](https://img.shields.io/badge/%E2%98%81%EF%B8%8F_Live-Alibaba_Function_Compute-FF6A00?style=for-the-badge)](https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/health)
   [![Pitch Deck](https://img.shields.io/badge/%F0%9F%93%BD%EF%B8%8F_Pitch-Deck-f59e0b?style=for-the-badge)](https://innkeeper.edycu.dev/pitch/)
   [![Demo Path](https://img.shields.io/badge/%F0%9F%95%B9%EF%B8%8F_Judge-Demo_Path-F59E0B?style=for-the-badge)](DEMO.md)
   [![QwenCloud Hackathon](https://img.shields.io/badge/QwenCloud-Track_4_Autopilot_Agent-8b5cf6?style=for-the-badge)](https://qwencloud-hackathon.devpost.com/)
@@ -35,8 +36,11 @@
 midnight squinting at three statements that disagree by $6.67 — because the last
 time they let it slide, it was $2,300 by month-end.*
 
-> No live demo URL — Innkeeper is a **CLI + MCP servers**, not a hosted web
-> app. Everything above runs locally, offline, with zero API keys; see
+> Innkeeper is a **CLI + MCP servers**, not a hosted web app — but the audit
+> engine is **deployed live on Alibaba Function Compute**
+> ([`/health` · `/verify` · `/run`](https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/health),
+> offline, zero keys — see [☁️ Deployed](#-deployed-on-alibaba-function-compute)).
+> Everything above also runs locally, offline, with zero API keys; see
 > [`DEMO.md`](./DEMO.md) for the exact copy-paste script.
 
 ---
@@ -81,6 +85,28 @@ pytest -q                         # 404 passed
 
 The full demo script is in [`DEMO.md`](./DEMO.md).
 
+## ☁️ Deployed on Alibaba Function Compute
+
+Innkeeper is **deployed live on Alibaba Function Compute** (FC 3.0, managed
+`python3.10` runtime — no container, no ACR) at
+**<https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run>**. Every endpoint runs
+**offline on the committed `fixtures/` + `ledger/`** — zero keys, no network, no
+vision model — so a judge can verify the signed books straight from a browser:
+
+| Endpoint | What it does |
+|---|---|
+| [`GET /health`](https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/health) | liveness |
+| [`GET /verify`](https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/verify) | re-verifies the 30 signed closes **in the cloud** — roots, Ed25519 signatures, evidence sha256 bindings, a byte-identical replay of 2026-07-04, and a one-byte tamper caught (I2 / I3 / I4) |
+| [`GET /run?night=2026-07-04`](https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/run?night=2026-07-04) | reproduces one deterministic FakeQwen night audit — 39 txns, 12 mismatches, 11 auto-cleared, 1 queued, Merkle root `d175694c…` |
+
+The live `qwen3-vl-plus` / `qwen3.7-max` path is **wired and verified with a real
+DashScope smoke call**, and stays key-gated behind `--live` (next section); the
+deployed endpoints are the **offline-deterministic engine**, byte-for-byte
+replayable. Full request/response transcript:
+[`docs/proof/DEPLOY_PROOF.md`](./docs/proof/DEPLOY_PROOF.md). The `02:00` timer
+trigger is configured in [`infra/fc/s.yaml`](./infra/fc/s.yaml); a captured
+console recording of the cron firing on its own is the one remaining artifact.
+
 ## 🔑 Run the real Qwen path (`--live`)
 
 The offline demo above proves the whole pipeline with **zero keys**. To exercise
@@ -105,7 +131,7 @@ is the single key-gated path; nothing else needs a network.
 
 ```mermaid
 flowchart LR
-  TMR["Function Compute timer 02:00<br/>(scaffold, not deployed)"] --> RUN["audit run"]
+  TMR["Function Compute<br/>(deployed · 02:00 timer configured)"] --> RUN["audit run"]
   RUN -->|"MCP tools"| M["3 mock servers — PMS · processor · OTA-PDF"]
   M --> EX["extract: qwen3-vl-plus two-pass + bbox (I5)"]
   RUN --> MT["deterministic 3-tier matcher<br/>clears ~77% — zero model calls"]
@@ -118,7 +144,7 @@ flowchart LR
   G --> CL["signed Merkle night-close → prev_root chain (I1–I4)"]
 ```
 
-<sub>**As built** = the three source systems are in-repo **mocks** (disclosed above); everything is green on FakeQwen, keyless. Live `qwen3-vl-plus` / `qwen3.7-max` sit behind `DASHSCOPE_API_KEY`; the 02:00 FC timer is configured (`infra/fc/`), not deployed. Plain-text view below.</sub>
+<sub>**As built** = the three source systems are in-repo **mocks** (disclosed above); everything is green on FakeQwen, keyless. Live `qwen3-vl-plus` / `qwen3.7-max` sit behind `DASHSCOPE_API_KEY`; the app is **deployed live on Function Compute** (managed python3.10 — `/health` · `/verify` · `/run`, offline) and the 02:00 timer trigger is configured in `infra/fc/s.yaml`. Plain-text view below.</sub>
 
 ```
 fetch (3× MCP)  →  extract (qwen3-vl-plus, two-pass + bbox)  →  deterministic match
@@ -198,9 +224,9 @@ src/innkeeper_audit/   amounts · config · schemas · crypto · matcher · poli
    mcp/                server (JSON-RPC) · tools · pms/processor/ota
 mcp/                   pms_server.py · processor_server.py · ota_server.py (stdio)
 scripts/               bench.py · verify_offline.py · check_submission_readiness.py
-infra/fc/              s.yaml (02:00 timer) · audit_handler.py · PROOF.md
+infra/fc/              s.yaml · wsgi.py (deployed HTTP handler) · audit_handler.py · PROOF.md
 tests/                 404 tests
-docs/                  BENCH.md · friction-log.md
+docs/                  BENCH.md · friction-log.md · proof/DEPLOY_PROOF.md
 ```
 
 ## ✅ Testing & CI
@@ -245,9 +271,13 @@ CI runs on every push/PR to `main` — see [`.github/workflows/ci.yml`](./.githu
   `qwen3-vl-plus` two-pass extraction and `qwen3.7-max` adjudication via the
   DashScope OpenAI-compatible endpoint. Not exercised in the offline suite by
   design; the deterministic `FakeQwen` computes verdicts from the same signals.
-- ⏳ **FC 02:00 timer is configured, not deployed** — [`infra/fc/`](./infra/fc/)
-  has the real `s.yaml` + handler; a live console recording of the cron firing
-  needs an Alibaba account + funded key (see [`PROOF.md`](./infra/fc/PROOF.md)).
+- ☁️ **Deployed live on Alibaba Function Compute** (managed `python3.10`) —
+  [`/health` · `/verify` · `/run`](https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/health)
+  run **offline** on the committed ledger (`/verify` re-verifies the signed-close
+  chain in the cloud; `/run` reproduces a night audit). Transcript in
+  [`docs/proof/DEPLOY_PROOF.md`](./docs/proof/DEPLOY_PROOF.md). The `02:00` timer
+  trigger is configured ([`infra/fc/s.yaml`](./infra/fc/s.yaml)); a captured
+  console recording of the cron firing on its own is the one remaining step.
 - ○ **`report.html` is optional** (single-page render via `innkeeper report
   --night N --html`); the primary report is Markdown. No Next.js UI shipped —
   the CLI + signed ledger are the product surface.

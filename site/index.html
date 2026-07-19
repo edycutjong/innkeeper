@@ -150,6 +150,8 @@ header.site.scrolled{border-bottom-color:var(--line);background:color-mix(in srg
 .btn-brass{background:color-mix(in srgb,var(--brass) 12%, transparent)}
 .btn-brass:hover{background:color-mix(in srgb,var(--brass) 20%, transparent);box-shadow:0 0 26px color-mix(in srgb,var(--brass) 25%, transparent)}
 .btn-sm{padding:9px 16px;font-size:13.5px}
+.btn-cloud{background:color-mix(in srgb,#FF6A00 13%, transparent);color:var(--text)}
+.btn-cloud:hover{background:color-mix(in srgb,#FF6A00 22%, transparent);box-shadow:0 0 26px color-mix(in srgb,#FF6A00 26%, transparent)}
 .btn svg{flex:none}
 
 /* ── hero ────────────────────────────────────────────── */
@@ -433,6 +435,9 @@ footer.site{border-top:1px solid var(--line);padding:64px 0 44px;background:colo
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M12 17v4M8 21h8"/></svg>
         Pitch Deck
       </a>
+      <a class="btn btn-cloud" href="https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/verify" rel="noopener" title="Re-verifies the signed-close chain in the cloud — offline, zero keys">
+        ☁️&nbsp; Live on Alibaba Cloud
+      </a>
     </div>
     <p class="runline st st6">Runs offline, zero API keys &nbsp;·&nbsp; <code>innkeeper run --night 2026-07-04</code></p>
   </div>
@@ -587,7 +592,7 @@ footer.site{border-top:1px solid var(--line);padding:64px 0 44px;background:colo
       </article>
       <article class="hcard rv d3">
         <h3><span class="tag">Scope</span>Decision support, not books of record</h3>
-        <p>Innkeeper produces signed evidence and a morning queue — it is <b>not an accounting system of record</b>. The 02:00 Function Compute timer is configured in <code>infra/fc/</code> but not deployed; runs shown here are invoked locally.</p>
+        <p>Innkeeper produces signed evidence and a morning queue — it is <b>not an accounting system of record</b>. The audit engine is <b>deployed live on Alibaba Function Compute</b> (managed python3.10 — <code>/health</code>, <code>/verify</code>, <code>/run</code>, offline); the 02:00 timer trigger is configured in <code>infra/fc/</code>, with a captured cron recording the one remaining step.</p>
       </article>
     </div>
   </div>
@@ -643,6 +648,7 @@ footer.site{border-top:1px solid var(--line);padding:64px 0 44px;background:colo
     <div class="ctas rv d3">
       <a class="btn btn-primary" href="https://github.com/edycutjong/innkeeper">View on GitHub</a>
       <a class="btn btn-brass" href="/pitch/">See the Pitch Deck</a>
+      <a class="btn btn-cloud" href="https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/verify" rel="noopener">☁️&nbsp; Verify live on Alibaba Cloud</a>
     </div>
   </div>
 </section>
@@ -661,6 +667,7 @@ footer.site{border-top:1px solid var(--line);padding:64px 0 44px;background:colo
         <h4>Project</h4>
         <ul>
           <li><a href="https://github.com/edycutjong/innkeeper">GitHub repository</a></li>
+          <li><a href="https://innkeeper-temfmzpqug.ap-southeast-1.fcapp.run/verify" rel="noopener">Live on Alibaba Cloud ☁️</a></li>
           <li><a href="https://github.com/edycutjong/innkeeper/blob/main/DEMO.md">Demo script</a></li>
           <li><a href="https://github.com/edycutjong/innkeeper/blob/main/docs/BENCH.md">Benchmark</a></li>
         </ul>

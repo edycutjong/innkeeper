@@ -401,7 +401,7 @@ code.inline{font-family:var(--font-mono);font-size:.88em;color:var(--color-prima
 </section>
 
 <!-- ══════════ SLIDE 9 · TRACTION ══════════ -->
-<section class="slide" data-notes="Shipped facts only: 404 tests at 100% coverage, a 30-night benchmark with zero false clears, five-stage CI. And the honesty is part of the engineering: the source systems are disclosed in-repo mocks, and the 2 AM timer is configured but not deployed.">
+<section class="slide" data-notes="Shipped facts only: 404 tests at 100% coverage, a 30-night benchmark with zero false clears, five-stage CI. It is deployed live on Alibaba Function Compute — managed python3.10, offline endpoints /health, /verify, /run at innkeeper-temfmzpqug.ap-southeast-1.fcapp.run. And the honesty is part of the engineering: the source systems are disclosed in-repo mocks.">
   <p class="kicker">Traction — shipped, verifiable</p>
   <h2 style="font-size:62px">Built solo. <span class="em">Green everywhere.</span></h2>
   <div class="tiles" style="margin-top:44px">
@@ -419,10 +419,10 @@ code.inline{font-family:var(--font-mono);font-size:.88em;color:var(--color-prima
     <ul class="list">
       <li><b>Honest:</b> PMS/processor/OTA are disclosed in-repo mocks</li>
       <li><b>Honest:</b> offline runs use deterministic FakeQwen; <code class="inline">--live</code> is key-gated</li>
-      <li><b>Honest:</b> the 02:00 FC timer is configured (<code class="inline">infra/fc/</code>), not deployed</li>
+      <li><b>Deployed:</b> live on Alibaba Function Compute (py3.10) — <code class="inline">/health</code> · <code class="inline">/verify</code> · <code class="inline">/run</code>, offline</li>
     </ul>
   </div>
-  <aside class="speaker-notes">Shipped facts only: 404 tests, 100% coverage, 30-night bench with zero false clears, five-stage CI. Honesty is engineered in — mocks disclosed, timer configured not deployed.</aside>
+  <aside class="speaker-notes">Shipped facts only: 404 tests, 100% coverage, 30-night bench with zero false clears, five-stage CI. Deployed live on Alibaba Function Compute (py3.10) — /health · /verify · /run, offline. Honesty is engineered in — mocks disclosed.</aside>
 </section>
 
 <!-- ══════════ SLIDE 10 · THE ASK ══════════ -->
